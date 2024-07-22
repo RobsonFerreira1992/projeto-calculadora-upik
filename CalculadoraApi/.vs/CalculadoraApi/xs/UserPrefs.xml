@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{3CA0A785-CB66-4D48-92B0-714847503507}|CalculatorApi">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculadoraApi/Controllers/CalculadoraController.cs">
+    <Files>
+      <File FileName="CalculadoraApi/Program.cs" />
+      <File FileName="CalculadoraApi/Models/CalculadoraRequest.cs" />
+      <File FileName="CalculadoraApi/Controllers/CalculadoraController.cs" Line="31" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CalculadoraApi" expanded="True">
+            <Node name="CalculadoraApi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CalculadoraController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CalculadoraApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
