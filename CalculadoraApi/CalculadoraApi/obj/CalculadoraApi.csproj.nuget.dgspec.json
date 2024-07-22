@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/robsonferreiramiranda/Projects/projeto-upik-calculadora/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj": {}
+    "/Users/robsonferreiramiranda/Documents/upik/projeto-academy-upik/projeto-calculadora-upik/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj": {}
   },
   "projects": {
-    "/Users/robsonferreiramiranda/Projects/projeto-upik-calculadora/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj": {
+    "/Users/robsonferreiramiranda/Documents/upik/projeto-academy-upik/projeto-calculadora-upik/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/robsonferreiramiranda/Projects/projeto-upik-calculadora/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj",
+        "projectUniqueName": "/Users/robsonferreiramiranda/Documents/upik/projeto-academy-upik/projeto-calculadora-upik/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj",
         "projectName": "CalculadoraApi",
-        "projectPath": "/Users/robsonferreiramiranda/Projects/projeto-upik-calculadora/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj",
+        "projectPath": "/Users/robsonferreiramiranda/Documents/upik/projeto-academy-upik/projeto-calculadora-upik/CalculadoraApi/CalculadoraApi/CalculadoraApi.csproj",
         "packagesPath": "/Users/robsonferreiramiranda/.nuget/packages/",
-        "outputPath": "/Users/robsonferreiramiranda/Projects/projeto-upik-calculadora/CalculadoraApi/CalculadoraApi/obj/",
+        "outputPath": "/Users/robsonferreiramiranda/Documents/upik/projeto-academy-upik/projeto-calculadora-upik/CalculadoraApi/CalculadoraApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/robsonferreiramiranda/.nuget/NuGet/NuGet.Config"
