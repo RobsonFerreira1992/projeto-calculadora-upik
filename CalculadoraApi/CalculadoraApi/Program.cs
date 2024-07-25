@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Version = "v1",
         Title = "Calculadora API",
-        Description = "um Simples exemplo ASP.NET Core Web API",
+        Description = "Um simples exemplo ASP.NET Core Web API",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new Microsoft.OpenApi.Models.OpenApiContact
         {
@@ -42,7 +42,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Calculator API v1");
-        options.RoutePrefix = string.Empty;  
+        options.RoutePrefix = string.Empty;
     });
 }
 

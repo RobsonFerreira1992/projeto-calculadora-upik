@@ -11,12 +11,26 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <!-- Remove entradas desnecessárias que podem causar duplicação -->
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Controllers\" />
+    <None Remove="Utils\" />
+    <None Remove="Utils\Extensions\" />
+    <None Remove="Utils\Extensions\CalculatorExtensions.proto" />
   </ItemGroup>
-  <ItemGroup>
+
+  <!-- As pastas são incluídas automaticamente e não precisam ser especificadas -->
+  <!-- <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
-  </ItemGroup>
+    <Folder Include="Utils\" />
+    <Folder Include="Utils\Extensions\" />
+  </ItemGroup> -->
+
+  <!-- Remove a inclusão explícita de arquivos que pode causar duplicação -->
+  <!-- <ItemGroup>
+    <Compile Include="Utils\Extensions\CalculadoraExtensions.cs" />
+  </ItemGroup> -->
+
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CalculatorApi.Models;
+using CalculatorApi.Utils.Extensions;
 
 namespace CalculatorApi.Controllers
 {
@@ -7,25 +8,78 @@ namespace CalculatorApi.Controllers
     [Route("[controller]")]
     public class CalculadoraController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult Calculate([FromBody] CalculadoraRequest request)
+        [HttpPost("soma")]
+        public IActionResult Soma([FromBody] CalculadoraRequest request)
         {
-            if (string.IsNullOrEmpty(request.Operation))
+            try
             {
-                return BadRequest("Operação inválida");
+                request.Operation = "+";
+                double result = request.Calculate();
+                return Ok(new { result });
             }
-
-            double result = request.Operation switch
+            catch (Exception ex)
             {
-                "+" => request.Number1 + request.Number2,
-                "-" => request.Number1 - request.Number2,
-                "*" => request.Number1 * request.Number2,
-                "/" => request.Number2 != 0 ? request.Number1 / request.Number2 : throw new DivideByZeroException(),
-                "%" => request.Number1 % request.Number2,
-                _ => throw new InvalidOperationException("Operação inválida")
-            };
+                return BadRequest(ex.Message);
+            }
+        }
 
-            return Ok(new { Result = result });
+        [HttpPost("subtracao")]
+        public IActionResult Subtracao([FromBody] CalculadoraRequest request)
+        {
+            try
+            {
+                request.Operation = "-";
+                double result = request.Calculate();
+                return Ok(new { result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("multiplicacao")]
+        public IActionResult Multiplicacao([FromBody] CalculadoraRequest request)
+        {
+            try
+            {
+                request.Operation = "*";
+                double result = request.Calculate();
+                return Ok(new { result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("divisao")]
+        public IActionResult Divisao([FromBody] CalculadoraRequest request)
+        {
+            try
+            {
+                request.Operation = "/";
+                double result = request.Calculate();
+                return Ok(new { result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost("porcentagem")]
+        public IActionResult Porcentagem([FromBody] CalculadoraRequest request)
+        {
+            try
+            {
+                request.Operation = "%";
+                double result = request.Calculate();
+                return Ok(new { result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
