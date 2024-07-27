@@ -47,15 +47,12 @@ Um exemplo simples de uma API de calculadora construída com ASP.NET Core e um f
     cd CalculadoraView
     ```
 
-2. Instale as dependências:
-    ```bash
-    npm install
-    ```
+2. Abra no navegador o arquivo index.html
 
-3. Rode a aplicação:
-    ```bash
-    npm start
-    ```
+
+3. Ou voce pode adicionar a extensao live server no seu vscode e clicar para abrir a pagina
+    
+![Captura de Tela 2024-07-27 às 12 34 13](https://github.com/user-attachments/assets/ad51eea3-86c5-43eb-8fa0-437c8c3973ef)
 
 ## Uso
 
