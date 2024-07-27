@@ -205,37 +205,31 @@ class CalcController {
     }
 
     async calculateApi(number1, number2, operation) {
-        // Define os endpoints baseados na operação
-        const endpoints = {
-            '+': 'soma',
-            '-': 'subtracao',
-            '*': 'multiplicacao',
-            '/': 'divisao',
-            '%':'porcentagem'
-        };
-    
-        // Verifica se a operação é válida e cria a URL
-        const endpoint = endpoints[operation];
-        if (!endpoint) {
-            throw new Error("Operação inválida");
+        let endpoint = '';
+        switch (operation) {
+            case '+':
+                endpoint = 'soma';
+                break;
+            case '-':
+                endpoint = 'subtracao';
+                break;
+            case '*':
+                endpoint = 'multiplicacao';
+                break;
+            case '/':
+                endpoint = 'divisao';
+                break;
+            default:
+                throw new Error('Operação inválida');
         }
     
-        const url = `https://localhost:7144/Calculadora/${endpoint}`;
-    
-        // Faz a requisição para o endpoint apropriado
-        const response = await fetch(url, {
+        const response = await fetch(`https://localhost:7144/Calculadora/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ Number1: number1, Number2: number2 })
         });
-    
-        // Verifica se a resposta é válida e obtém o resultado
-        if (!response.ok) {
-            const error = await response.text();
-            throw new Error(error || "Erro ao calcular");
-        }
     
         const data = await response.json();
         return data.result;

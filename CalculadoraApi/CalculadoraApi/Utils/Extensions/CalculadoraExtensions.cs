@@ -1,18 +1,13 @@
-﻿
-using CalculatorApi.Models;
+﻿using CalculatorApi.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace CalculatorApi.Utils.Extensions
+namespace CalculatorCalc.Utils.Extensions
 {
     public static class CalculatorExtensions
     {
-        public static double Calculate(this CalculadoraRequest request)
+        public static double Calculate(this CalculadoraRequest request, string operation)
         {
-            if (string.IsNullOrEmpty(request.Operation))
-            {
-                throw new InvalidOperationException("Operação inválida");
-            }
-
-            return request.Operation switch
+            return operation switch
             {
                 "+" => request.Number1 + request.Number2,
                 "-" => request.Number1 - request.Number2,

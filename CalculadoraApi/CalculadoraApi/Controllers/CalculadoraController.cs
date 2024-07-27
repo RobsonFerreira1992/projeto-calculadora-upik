@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CalculatorApi.Models;
-using CalculatorApi.Utils.Extensions;
+using CalculatorCalc.Utils.Extensions;
 
 namespace CalculatorApi.Controllers
 {
@@ -13,8 +13,7 @@ namespace CalculatorApi.Controllers
         {
             try
             {
-                request.Operation = "+";
-                double result = request.Calculate();
+                double result = request.Calculate("+");
                 return Ok(new { result });
             }
             catch (Exception ex)
@@ -28,8 +27,7 @@ namespace CalculatorApi.Controllers
         {
             try
             {
-                request.Operation = "-";
-                double result = request.Calculate();
+                double result = request.Calculate("-");
                 return Ok(new { result });
             }
             catch (Exception ex)
@@ -43,8 +41,7 @@ namespace CalculatorApi.Controllers
         {
             try
             {
-                request.Operation = "*";
-                double result = request.Calculate();
+                double result = request.Calculate("*");
                 return Ok(new { result });
             }
             catch (Exception ex)
@@ -58,8 +55,7 @@ namespace CalculatorApi.Controllers
         {
             try
             {
-                request.Operation = "/";
-                double result = request.Calculate();
+                double result = request.Calculate("/");
                 return Ok(new { result });
             }
             catch (Exception ex)
@@ -72,8 +68,7 @@ namespace CalculatorApi.Controllers
         {
             try
             {
-                request.Operation = "%";
-                double result = request.Calculate();
+                double result = request.Calculate("%");
                 return Ok(new { result });
             }
             catch (Exception ex)
