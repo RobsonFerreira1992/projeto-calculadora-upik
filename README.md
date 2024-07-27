@@ -24,8 +24,8 @@ Um exemplo simples de uma API de calculadora construída com ASP.NET Core e um f
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/calculadora-api.git
-    cd calculadora-api
+    git clone https://github.com/RobsonFerreira1992/projeto-calculadora-upik.git
+    cd projeto-calculadora-upik
     ```
 
 2. Navegue até o diretório do projeto e instale as dependências:
@@ -44,7 +44,7 @@ Um exemplo simples de uma API de calculadora construída com ASP.NET Core e um f
 
 1. Navegue até o diretório do frontend:
     ```bash
-    cd frontend
+    cd CalculadoraView
     ```
 
 2. Instale as dependências:
@@ -155,16 +155,16 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## Autores
 
-- **Seu Nome** - [Seu GitHub](https://github.com/seu-usuario)
+- **Robson Ferreira Miranda** - [Seu GitHub](https://github.com/RobsonFerreira1992)
 
 ---
 
 ### Imagens e Demonstrações
 
 #### Arquitetura da Aplicação
+![Captura de Tela 2024-07-27 às 12 16 31](https://github.com/user-attachments/assets/2b403de7-8fb6-4bb3-a943-3c15026e8345)
 
-![Arquitetura da Aplicação](path/to/your/image.png)
 
 #### Demonstração da API
 
-![Demonstração da API](path/to/your/image.png)
+![Captura de Tela 2024-07-27 às 12 15 22](https://github.com/user-attachments/assets/03c118b9-f21c-4438-a30a-a27542e64990)
