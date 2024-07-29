@@ -1,32 +1,29 @@
 ﻿<Properties StartupConfiguration="{3CA0A785-CB66-4D48-92B0-714847503507}|CalculatorApi">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.CalculadoraApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CalculadoraApi/Controllers/CalculadoraController.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculadoraApi/Services/HistoricoService.cs">
     <Files>
       <File FileName="CalculadoraApi/Models/CalculadoraRequest.cs" />
-      <File FileName="CalculadoraApi/Controllers/CalculadoraController.cs" Line="66" Column="1" />
+      <File FileName="CalculadoraApi/Controllers/CalculadoraController.cs" Line="79" Column="1" />
       <File FileName="CalculadoraApi/Utils/Extensions/CalculadoraExtensions.cs" />
+      <File FileName="CalculadoraApi/Services/HistoricoService.proto" Line="20" Column="44" />
+      <File FileName="CalculadoraApi/Models/HistoricoEntry.proto" Line="8" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CalculadoraApi" expanded="True">
-            <Node name="CalculadoraApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="CalculadoraRequest.cs" selected="True" />
-              </Node>
-              <Node name="Utils" expanded="True">
-                <Node name="Extensions" expanded="True" />
-              </Node>
+          <Node name="CalculadoraApi">
+            <Node name="CalculadoraApi">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
