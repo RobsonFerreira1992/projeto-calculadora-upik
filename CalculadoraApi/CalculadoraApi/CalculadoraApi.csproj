@@ -18,6 +18,9 @@
     <None Remove="Utils\" />
     <None Remove="Utils\Extensions\" />
     <None Remove="Utils\Extensions\CalculatorExtensions.proto" />
+    <None Remove="Services\" />
+    <None Remove="Services\HistoricoService.proto" />
+    <None Remove="Models\HistoricoEntry.proto" />
   </ItemGroup>
 
   <!-- As pastas são incluídas automaticamente e não precisam ser especificadas -->
@@ -32,5 +35,6 @@
   <!-- <ItemGroup>
     <Compile Include="Utils\Extensions\CalculadoraExtensions.cs" />
   </ItemGroup> -->
+
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CalculatorApi.Models;
+using CalculatorApi.Services;
 using CalculatorCalc.Utils.Extensions;
 
 namespace CalculatorApi.Controllers
@@ -8,73 +9,56 @@ namespace CalculatorApi.Controllers
     [Route("[controller]")]
     public class CalculadoraController : ControllerBase
     {
-        [HttpPost("soma")]
-        public IActionResult Soma([FromBody] CalculadoraRequest request)
+        private IActionResult PerformOperation(CalculadoraRequest request, string operation)
         {
             try
             {
-                double result = request.Calculate("+");
+                double result = request.Calculate(operation);
+
+                HistoricoService.AddHistoricoEntry(request.Number1, request.Number2, operation, result);
+
                 return Ok(new { result });
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpPost("soma")]
+        public IActionResult Soma([FromBody] CalculadoraRequest request)
+        {
+            return PerformOperation(request, "+");
         }
 
         [HttpPost("subtracao")]
         public IActionResult Subtracao([FromBody] CalculadoraRequest request)
         {
-            try
-            {
-                double result = request.Calculate("-");
-                return Ok(new { result });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return PerformOperation(request, "-");
         }
 
         [HttpPost("multiplicacao")]
         public IActionResult Multiplicacao([FromBody] CalculadoraRequest request)
         {
-            try
-            {
-                double result = request.Calculate("*");
-                return Ok(new { result });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return PerformOperation(request, "*");
         }
 
         [HttpPost("divisao")]
         public IActionResult Divisao([FromBody] CalculadoraRequest request)
         {
-            try
-            {
-                double result = request.Calculate("/");
-                return Ok(new { result });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return PerformOperation(request, "/");
         }
-        [HttpPost("porcentagem")]
-        public IActionResult Porcentagem([FromBody] CalculadoraRequest request)
+        [HttpPost("resto-divisao")]
+        public IActionResult RestoDivisao([FromBody] CalculadoraRequest request)
         {
-            try
-            {
-                double result = request.Calculate("%");
-                return Ok(new { result });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return PerformOperation(request, "%");
+        }
+
+        [HttpGet("historico")]
+        public IActionResult GetHistorico()
+        {
+            var historico = HistoricoService.GetHistorico();
+            return Ok(historico);
         }
     }
 }
