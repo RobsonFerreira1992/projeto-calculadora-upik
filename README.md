@@ -60,9 +60,6 @@ Um exemplo simples de uma API de calculadora construída com ASP.NET Core e um f
 
 A API estará rodando em `https://localhost:7144`. Você pode testar os endpoints usando o Postman ou qualquer outro cliente HTTP.
 
-### Frontend
-
-A aplicação frontend estará rodando em `http://localhost:5500`. Abra essa URL no seu navegador.
 
 ## Endpoints da API
 
