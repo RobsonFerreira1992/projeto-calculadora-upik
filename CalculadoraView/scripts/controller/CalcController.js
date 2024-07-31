@@ -219,6 +219,9 @@ class CalcController {
             case '/':
                 endpoint = 'divisao';
                 break;
+            case '%':
+                endpoint = 'resto-divisao';
+                break;
             default:
                 throw new Error('Operação inválida');
         }

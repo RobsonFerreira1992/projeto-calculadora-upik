@@ -1,21 +1,28 @@
 ﻿<Properties StartupConfiguration="{3CA0A785-CB66-4D48-92B0-714847503507}|CalculatorApi">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CalculadoraApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CalculadoraApi/Services/HistoricoService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculadoraApi/Utils/Extensions/CalculadoraExtensions.cs">
     <Files>
-      <File FileName="CalculadoraApi/Models/CalculadoraRequest.cs" />
-      <File FileName="CalculadoraApi/Controllers/CalculadoraController.cs" Line="79" Column="1" />
-      <File FileName="CalculadoraApi/Utils/Extensions/CalculadoraExtensions.cs" />
-      <File FileName="CalculadoraApi/Services/HistoricoService.proto" Line="20" Column="44" />
-      <File FileName="CalculadoraApi/Models/HistoricoEntry.proto" Line="8" Column="23" />
+      <File FileName="CalculadoraApi/Models/CalculadoraRequest.cs" Line="3" Column="36" />
+      <File FileName="CalculadoraApi/Models/HistoricoEntry.cs" Line="1" Column="1" />
+      <File FileName="CalculadoraApi/Controllers/CalculadoraController.cs" Line="18" Column="105" />
+      <File FileName="CalculadoraApi/Services/HistoricoService.cs" Line="28" Column="75" />
+      <File FileName="CalculadoraApi/Utils/Extensions/CalculadoraExtensions.cs" Line="14" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CalculadoraApi">
-            <Node name="CalculadoraApi">
+            <Node name="CalculadoraApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="Utils" expanded="True">
+                <Node name="Extensions" expanded="True">
+                  <Node name="CalculadoraExtensions.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -23,7 +30,6 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
